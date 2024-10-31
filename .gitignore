@@ -1,0 +1,7 @@
+.idea
+*iml
+target
+GreetBot
+.metals
+.scala-build
+.bloop

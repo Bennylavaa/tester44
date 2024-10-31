@@ -1,0 +1,24 @@
+<configuration>
+    <property name="logLevel" value="ERROR" />
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} %-5level %logger{16} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <logger name="net.dv8tion.jda.core.requests.Requester" level="${logLevel}" />
+
+    <logger name="wowchat.game.GamePacketEncoder" level="${logLevel}" />
+    <logger name="wowchat.game.GamePacketEncoderCataclysm" level="${logLevel}" />
+    <logger name="wowchat.game.GamePacketEncoderMoP" level="${logLevel}" />
+
+    <logger name="wowchat.game.GamePacketDecoder" level="${logLevel}" />
+    <logger name="wowchat.game.GamePacketDecoderWotLK" level="${logLevel}" />
+    <logger name="wowchat.game.GamePacketDecoderCataclysm" level="${logLevel}" />
+    <logger name="wowchat.game.GamePacketDecoderMoP" level="${logLevel}" />
+
+    <root level="${logLevel}">
+        <appender-ref ref="STDOUT" />
+    </root>
+</configuration>
